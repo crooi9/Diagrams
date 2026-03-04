@@ -1,13 +1,13 @@
 ```mermaid
 graph TD
     A[Start Calculate] --> B{Any Related Value IsNotApplicable?};
-    B -- Yes --> C[Return "N/A"];
+    B -- Yes --> C[Return N/A];
     B -- No --> D{Any Related Value IsNullOrEmpty?};
     D -- Yes --> E[Return null];
     D -- No --> F{Any Related Value IsFailed?};
-    F -- Yes --> G[Return "FAIL"];
+    F -- Yes --> G[Return FAIL];
     F -- No --> H{Any Related Value IsBroken?};
-    H -- Yes --> I[Return "Broken"];
+    H -- Yes --> I[Return Broken];
     H -- No --> J{Any Related Value IsNotNumber?};
     J -- Yes --> C;
     J -- No --> K[Format Expression String];
