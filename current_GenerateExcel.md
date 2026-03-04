@@ -21,6 +21,3 @@ graph TD
         K -- Value --> L[Write Value to Cell];
         K -- Unit/IsNumber --> M[Write Unit to Cell];
     end
-
-    style FillApplicationTests fill:#f9f,stroke:#333,stroke-width:2px
-    style AddPointRow fill:#ccf,stroke:#333,stroke-width:2px
